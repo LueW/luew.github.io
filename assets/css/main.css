@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+*{
+  padding: 0;
+  margin: 0;
+}
+html, body, .cover-page {
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: 'Merriweather', sans-serif;
+}
+
+/*-*-*-*-*-*-*-*-*-*-* NAVBAR *-*-*-*-*-*-*-*-*-*-*/
+
+.navbar-inverse{
+  background-color: transparent;
+  border-color: transparent;
+  padding: 10px 0;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  border-bottom: 3px solid white;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #B0B0B0;
+  border-bottom: 3px solid #B0B0B0;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #B0B0B0;
+  border-bottom: 3px solid #B0B0B0;
+}
+
+.navbar-brand{
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+.navbar-brand > i {
+  color: white ;
+}
+.navbar-brand > i > span {
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: #B0B0B0 !important;
+}
+
+.navbar-height {
+  background-color: black;
+  border-bottom: 1px solid #464646;
+  padding: 0;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+
+@media (max-width: 767px) {
+
+  .navbar-inverse{
+    background-color: black;
+    border-color: black;
+    padding: 0;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+    margin: 0;
+  }
+
+  .navbar-brand{
+    margin-top: 0;
+  }
+
+}
+
+/*-*-*-*-*-*-*-*-*-*-* HEADER *-*-*-*-*-*-*-*-*-*-*/
+
+.cover-page {
+  display: table;
+  text-align: center;
+  color: white;
+  padding: 0;
+  background: url(../img/bg-cover-page.jpg) bottom center no-repeat #000;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.cover-page-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.text-cover-page {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+
+  .text-cover-page {
+    font-size: 50px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .text-cover-page {
+    font-size: 40px;
+  }
+
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/*-*-*-*-*-*-*-*-*-*-* SECCTIONS *-*-*-*-*-*-*-*-*-*-*/
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.section-title {
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 30px;
+}
+.section-text {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+/*-*-*-*-*-*-*-*-*-*-* About me *-*-*-*-*-*-*-*-*-*-*/
+#about-me {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-color: black;
+}
+
+/*-*-*-*-*-*-*-*-*-*-* Contact me *-*-*-*-*-*-*-*-*-*-*/
+#contact-me {
+  background: url(../img/parallax-1.jpg) bottom center no-repeat #000;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.social-networks {
+  list-style: none;
+  margin-top: 50px;
+  text-align: center;
+}
+.social-networks > li {
+  display: inline-block;
+}
+.social-networks > li + li{
+  margin-left: 15px;
+}
+.social-networks > li > a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+.social-networks > li > a:hover {
+  color: black;
+  background-color: white;
+}
+.social-networks > li > a > i > span {
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+
+  .social-networks > li {
+    display: block;
+  }
+  .social-networks > li + li{
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .social-networks > li > a {
+    margin: 0 auto;
+    width: 160px;
+  }
+
+}
+
+/*-*-*-*-*-*-*-*-*-*-* Download *-*-*-*-*-*-*-*-*-*-*/
+#download {
+  background: url(../img/parallax-1.jpg) bottom center no-repeat #000;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.download-button {
+  margin-top: 50px;
+}
+.download-button > a {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+.download-button > a:hover {
+  background-color: white;
+  color: black;
+}
+.download-button > a > i > span{
+  font-weight: bold;
+}
+
+/*-*-*-*-*-*-*-*-*-*-* FOOTER *-*-*-*-*-*-*-*-*-*-*/
+
+footer {
+  padding: 120px 0 25px 0;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 18px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-* Additional CSS *-*-*-*-*-*-*-*-*-*-*/
+
+.black-separator {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
