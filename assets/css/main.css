@@ -170,8 +170,8 @@ body{
   text-align: center;
   padding: 10px;
   text-transform: uppercase;
-  color: white;
-  border: 1px solid white;
+  color: #FF7654;
+  border: 1px solid #FF7654;
   transition-property: all;
   transition-duration: .2s;
   transition-timing-function: linear;
@@ -179,7 +179,7 @@ body{
 }
 .social-networks > li > a:hover {
   color: black;
-  background-color: white;
+  background-color: #FF7654;
 }
 .social-networks > li > a > i > span {
   font-weight: bold;
@@ -198,6 +198,90 @@ body{
     width: 160px;
   }
 
+}
+
+/*-*-*-*-*-*-*-*-*-*-* Portfolio *-*-*-*-*-*-*-*-*-*-*/
+
+#portfolio {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: black;
+}
+#portfolio .section-title {
+  margin-bottom: 100px;
+}
+#portfolio img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+#portfolio img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+#portfolio .theme-title {
+  color: #FF7654;
+}
+#portfolio .theme-text {
+  color: white;
+}
+
+#portfolio .theme-buttons {
+  list-style: none;
+  margin-top: 25px;
+}
+#portfolio .theme-buttons > li {
+  display: inline-block;
+}
+#portfolio .theme-buttons > li + li {
+  margin-left: 10px;
+}
+#portfolio .theme-buttons > li > a {
+  display: block;
+  width: 150px;
+  color: #FF7654;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #FF7654;
+  padding: 10px;
+
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+#portfolio .theme-buttons > li > a:hover {
+  background-color: #FF7654;
+  color: black;
+}
+#portfolio .theme-buttons > li > a > i > span {
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+
+  #portfolio {
+    text-align: center;
+  }
+  #portfolio .theme-title {
+    margin-top: 30px;
+  }
+  #portfolio .theme-buttons > li {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+  #portfolio .theme-buttons > li + li {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  #portfolio .theme-buttons > li > a {
+    margin: 0 auto;
+  }
 }
 
 /*-*-*-*-*-*-*-*-*-*-* Download *-*-*-*-*-*-*-*-*-*-*/
@@ -219,15 +303,15 @@ body{
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
-  border: 1px solid white;
+  color: #FF7654;
+  border: 1px solid #FF7654;
   transition-property: all;
   transition-duration: .2s;
   transition-timing-function: linear;
   transition-delay: .1s;
 }
 .download-button > a:hover {
-  background-color: white;
+  background-color: #FF7654;
   color: black;
 }
 .download-button > a > i > span{
@@ -242,12 +326,4 @@ footer {
   color: white;
   background-color: black;
   font-size: 18px;
-}
-
-/*-*-*-*-*-*-*-*-*-*-* Additional CSS *-*-*-*-*-*-*-*-*-*-*/
-
-.black-separator {
-  width: 100%;
-  height: 300px;
-  background-color: black;
 }
